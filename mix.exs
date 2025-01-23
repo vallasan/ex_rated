@@ -4,8 +4,8 @@ defmodule ExRated.Mixfile do
   def project do
     [
       app: :ex_rated,
-      version: "2.1.0",
-      elixir: "~> 1.7",
+      version: "2.1.0-forked",
+      elixir: "~> 1.17",
       description: description(),
       package: package(),
       deps: deps(),
@@ -43,8 +43,8 @@ defmodule ExRated.Mixfile do
   # Type `mix help deps` for more examples and options
   defp deps do
     [
-      {:ex2ms, "~> 1.5"},
-      {:benchfella, "~> 0.3.0", only: :dev},
+      {:ex2ms, "~> 1.7"},
+      {:benchfella, "~> 0.3", only: :dev},
       {:ex_doc, "~> 0.19", only: :dev},
       {:credo, "~>1.6", only: :dev}
     ]
